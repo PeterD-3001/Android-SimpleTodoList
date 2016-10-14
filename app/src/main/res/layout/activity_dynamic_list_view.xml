@@ -29,12 +29,7 @@
             android:inputType="textPersonName"
             />
 
-        <Button
-            android:id="@+id/addItemButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/add_item"
-            />
+
 
         <ListView
             android:id="@+id/itemsListView"
@@ -42,6 +37,16 @@
             android:layout_height="match_parent"
             />
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/addItemButton"
+        android:layout_height="@dimen/add_button_diameter"
+        android:layout_width="@dimen/add_button_diameter"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="@dimen/add_button_margin"
+        android:layout_marginEnd="@dimen/add_button_margin"
+        android:background="@drawable/oval"
+        />
 
 </FrameLayout>
 

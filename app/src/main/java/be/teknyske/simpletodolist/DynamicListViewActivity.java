@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -17,7 +18,7 @@ import java.util.Set;
 public class DynamicListViewActivity extends AppCompatActivity {
 
     private EditText item;
-    private Button addButtonReference;
+    private ImageButton addButtonReference;
     private ListView myDynamicListView;
     private ArrayList<String> list;
     private ArrayAdapter<String> adapter;
@@ -29,7 +30,7 @@ public class DynamicListViewActivity extends AppCompatActivity {
 
         //get References to items from UI
         item = (EditText) findViewById(R.id.itemEditText);
-        addButtonReference = (Button) findViewById(R.id.addItemButton);
+        addButtonReference = (ImageButton) findViewById(R.id.addItemButton);
         myDynamicListView = (ListView) findViewById(R.id.itemsListView);
 
         // create list and add some test-items
